@@ -23,7 +23,7 @@ app.use(function(req, res, next) {
 });
 
 app.get('/matrix',(req,res,next) => {
-  res.send(text);
+  res.send(JSON.parse(text));
 })
 
 app.listen(PORT, () => { // start server and listen on specified port
