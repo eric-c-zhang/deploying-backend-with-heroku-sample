@@ -14,7 +14,7 @@ app.get('/', (req, res) => { // send a get request to root directory ('/' is thi
     })
 })
 
-app.get('/matrix'.(req,res,next) => {
+app.get('/matrix',(req,res,next) => {
   res.send(text);
 })
 
