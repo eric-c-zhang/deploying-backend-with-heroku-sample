@@ -8,9 +8,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "compute-covariance": "^1.0.1",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.1"
+    "mathjs": "^10.1.0",
+    "node-fetch": "^2.6.1",
+    "stocks.js": "^0.0.19"
   },
-  "devDependencies": {},
   "description": ""
 }
