@@ -7,14 +7,11 @@ getetfdata(assets)
 .then(matrix=>{
     covmatMain=matrix;
     console.log(covmatMain);
+    fs.writeFile('./updated-matrix.json', JSON.stringify(covmatMain), 'utf8', function (err) {
+        if (err) {
+            return console.log(err);
+        }
+    
+        console.log("The file was saved!");
+    });
 })
-
-console.log(covmatMain);
-
-fs.writeFile('./updated-matrix.json', JSON.stringify(covmatMain), 'utf8', function (err) {
-    if (err) {
-        return console.log(err);
-    }
-
-    console.log("The file was saved!");
-});
